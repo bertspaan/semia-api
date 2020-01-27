@@ -1,1 +1,3 @@
-# semia-api
+# SEMIA API
+
+API for https://bertspaan.nl/semia.
