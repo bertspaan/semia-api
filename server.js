@@ -23,7 +23,7 @@ let Video
 
 const APP_TITLE = 'SEMIA API'
 const BASE_URL = 'https://semia-api.glitch.me'
-const DATA_URL = 'https://cdn.glitch.com/b5f25577-7d51-4cc9-8e41-a994f9b499e7%2Fdata.ndjson?v=1567697184743'
+const DATA_URL = 'https://cdn.glitch.com/b5f25577-7d51-4cc9-8e41-a994f9b499e7%2Fapi-data.ndjson?v=1580154680486'
 const SEARCH_RESULTS = 25
 
 let loading = new EventEmitter()
