@@ -28,7 +28,7 @@ const SEARCH_RESULTS = 25
 
 let loading = new EventEmitter()
 
-const waitOnData = () => new Promise((resolve) => loading.once('done', () => {
+const waitOnData = () => new Promise((resolve) => loading.once('done', () => {    
   resolve()
   loading = undefined
 }))
@@ -65,7 +65,7 @@ async function loadVideosFromUrl (url) {
           data: video
         }))
         .toArray((videos) => {
-          console.log('Data loaded!')
+          console.log(`${videos.length} videos loaded from URL!`)
           resolve(videos)
         })
     } catch (err) {
@@ -87,8 +87,8 @@ H(loadVideosFromUrl(DATA_URL))
     })
   })
   .done(() => {
+    waitOnData()
     loading.emit('done')
-
     console.log('Done indexing!')
   })
 
